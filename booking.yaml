@@ -1,0 +1,30 @@
+
+browser:
+  firefox: /usr/bin/geckodriver
+#  chrome: path to chrome executable
+
+#### username and password of the account
+login:
+  username: yourusername@iisc.ac.in
+  password: yourpassword
+
+#### facility options and the timing of booking [timing should be an integer value of starting time of slot]
+#### badminton: [6 - 21], gymnasium: [6 - 20], table tennis: [6 - 18] except 13 are valid time values
+facility:
+  badminton: 15
+  gymnasium: 17
+  table tennis: 17
+
+#### lookup direction if the slot is full [before the time or after the time]
+lookup:
+  - before
+  - after
+
+lookup_range:
+  3
+
+#### total number of slots in each facility 
+number_of_slots:
+  badminton: 15
+  gymnasium: 14
+  table tennis: 12
