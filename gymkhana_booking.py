@@ -2,6 +2,13 @@
 from selenium import webdriver
 from time import sleep
 import yaml
+import datetime
+
+now = datetime.datetime.now().time()
+
+if now >= datetime.time(hour=17, minute=0, second=0) or now < datetime.time(hour=5, minute=30, second=0):
+    print('Booking is closed for today')
+    exit(0)
 
 booking_details = {}
 
