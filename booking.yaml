@@ -3,6 +3,10 @@ browser:
   firefox: /usr/bin/geckodriver
 #  chrome: path to chrome executable
 
+#### True if running the script using crontab else make it False
+headless:
+  True
+
 #### username and password of the account
 login:
   username: yourusername@iisc.ac.in
